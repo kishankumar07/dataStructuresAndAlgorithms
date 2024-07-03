@@ -14,3 +14,11 @@ Time complexity -
  Average case = O (n^2) when elements are randomly arranged
 
  best case - O (n) , when the array is already sorted, so only one time traversal will be there to check all are sorted. 
+
+ Space complexity : 
+ Bubble sorting is an inplace sorting so no temporary array is created for the sorting process. 
+
+ Space complexity is O (1). 
+Because only a constant space for temp and flag is taken and 
+
+Remember that bubble sorting modifies the original array instead of an additional temporary array created in between, thus it is called inplace sorting.
