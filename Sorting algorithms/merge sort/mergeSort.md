@@ -23,3 +23,4 @@ merge function calls on [4,8] and check whether they are in order and from there
  These above process continues for [5,9,1,2] and once they are in order [1,2,5,9]
 
  they will be compared in the merge function and finally returns the sorted array.
+ 
