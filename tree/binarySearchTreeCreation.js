@@ -10,8 +10,14 @@ class Node {
 
 class binarySearchTree {
     constructor(){
-        
+        this.root = null;
+    }
+    isEmpty(){
+        return this.root === null;
     }
 }
 let bst = new binarySearchTree();
 console.log(bst.isEmpty())
+
+//So this snippet is only for creating a node class and binarySearchTree class.
+// Insertion, deletion will be done as seperate js files.
