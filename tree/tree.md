@@ -26,3 +26,13 @@ Terminologies : Before that have an imaginary picture of the tree. once imagined
 10) Degree of a tree : Max degree in the tree.
 11) Depth of a node : No of edges from root to that node.
 12) Height of a node : No of edges from deepest leaf to that node.
+
+Why tree is a non-linear data structure ?
+A) Because data in a tree is not arranged sequentially like linear data structures. They are arranged on multiple levels.
+
+
+
+
+
+
+

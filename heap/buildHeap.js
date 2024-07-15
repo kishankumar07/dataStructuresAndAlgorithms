@@ -54,6 +54,13 @@ function extractMax(arr){
     maxHeapify(arr,n,0)
 }
 
+function heapSort(arr){
+    for(let i= arr.length-1;i>0;i--){
+        [arr[i],arr[0]] = [arr[0],arr[i]];
+        maxHeapify(arr,i,0)
+    }
+}
+
 
 
 let arr = [4,10,3,5,1];
@@ -63,7 +70,8 @@ insertMaxHeap(arr,6)
 console.log('array after inserting 6 is :',arr)
 deleteRoot(arr);
 console.log('arrray after deleting root is :',arr)
-
+heapSort(arr);
+console.log('array after heap sort :',arr)
 
 
 
