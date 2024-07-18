@@ -31,6 +31,17 @@ Why tree is a non-linear data structure ?
 A) Because data in a tree is not arranged sequentially like linear data structures. They are arranged on multiple levels.
 
 
+what is backtracking ? 
+A) algorithms that uses recursion to try out possible solutions and then undoing them if not leading to a solution.
+
+whether BFS use backtracking ? 
+A) NO BFS does not use backtracking like DFS. 
+
+backtracking is useful in sudoku, when after filling it comes to a state where it cant be solved then reverts back.
+
+
+In search method , there is return , so why no return in preOrder , inOrder, and postOrder . because in all the above, the array is modified directly, in every recursive calls its state is being preserved, just because they are all working on the same array they don't need to return their individual results to each other. or to say no need to pass the array back up each recursive call since it is the same array being modified.
+** arrays are passed as reference so in the deeper recursive call what changes even made is effectable in the  main function of the call stack.
 
 
 

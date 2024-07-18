@@ -96,3 +96,12 @@ Recap
 The formula Math.floor(n / 2) - 1 helps us efficiently identify where the non-leaf nodes end.
 This approach ensures we only heapify nodes that need to be checked and adjusted, making the heap-building process efficient.
 If you're given an array to build a heap, the formula helps you start from the correct index to maintain the heap property. Understanding this formula provides a clear path to heapify from the bottom-up, ensuring the entire structure follows the max-heap property.
+
+
+After week repeat:
+
+Heapify up and Heapify down are the two different methods used to maintain heap property in a heap data structure.
+
+When is Heapify up method used :  When a new element is added to heap, so it will swap with parent if heap property violated and continues until heap property is restored.
+
+heapify down is used when the root element is removed from the heap and during removal the last element in the heap is placed at root and then moved to its postition.

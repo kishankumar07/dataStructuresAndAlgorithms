@@ -6,11 +6,11 @@ function maxHeapify(arr,n,i){
     let right = 2 * i + 2;// this is the right child of it
 
     //to check whether left child is greater than the root\
-    if( left < n && arr[left] > arr[i]){
+    if( left < n && arr[left] > arr[largest]){
         largest = left;
     }
     // to check whether the right child is greater than the root
-    if(right < n && arr[right] > arr[i]){
+    if(right < n && arr[right] > arr[largest]){
         largest = right;
     }
 
