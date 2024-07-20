@@ -145,6 +145,7 @@ class binarySearchTree{
             root.value = this.min(root.right)
             root.right = this.deleteNode(root.right,value)
         }
+        return root;
     }
 }
 let bst = new binarySearchTree();

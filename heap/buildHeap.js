@@ -1,23 +1,23 @@
 // Building a heap using array; also insertion at the end is also there
 
 function maxHeapify(arr,n,i){
-    let largest = i;// Initialise largest as the root
-    let left = 2 * i + 1; // this is the left child of it
-    let right = 2 * i + 2;// this is the right child of it
+    let largest = i;
+    let left = 2 * i + 1;
+    let right = 2 * i + 2;
 
-    //to check whether left child is greater than the root\
+   
     if( left < n && arr[left] > arr[largest]){
         largest = left;
     }
-    // to check whether the right child is greater than the root
+  
     if(right < n && arr[right] > arr[largest]){
         largest = right;
     }
 
-    // to check still the largest before is the same after the above 2 if cases
+    
     if(largest !==i){
-        [arr[i],arr[largest]]= [arr[largest],arr[i]]; // swap
-        maxHeapify(arr,n,largest); // recursively heapify the affected subtree
+        [arr[i],arr[largest]]= [arr[largest],arr[i]]; 
+        maxHeapify(arr,n,largest); 
     }
 }
 function buildMaxHeap(arr){
@@ -72,6 +72,9 @@ deleteRoot(arr);
 console.log('arrray after deleting root is :',arr)
 heapSort(arr);
 console.log('array after heap sort :',arr)
+
+
+
 
 
 
