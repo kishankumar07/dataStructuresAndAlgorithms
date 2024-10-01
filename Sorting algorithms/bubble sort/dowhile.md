@@ -21,4 +21,6 @@ Time complexity -
  Space complexity is O (1). 
 Because only a constant space for temp and flag is taken and 
 
+
+            What is inplace sorting ?
 Remember that bubble sorting modifies the original array instead of an additional temporary array created in between, thus it is called inplace sorting.
