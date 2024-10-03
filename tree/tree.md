@@ -44,6 +44,10 @@ In search method , there is return , so why no return in preOrder , inOrder, and
 ** arrays are passed as reference so in the deeper recursive call what changes even made is effectable in the  main function of the call stack.
 
 
+What are the complexities of BFS and DFS in a BST?
+- For both BFS and DFS , time complexities are O(n) because each node is visited once. 
+-For DFS space complexity is : O(h),h is the height of the tree and for BFS, the space complexity is O(w), w is the width of the tree, what if it is a complete binary tree.
+
 
 
 

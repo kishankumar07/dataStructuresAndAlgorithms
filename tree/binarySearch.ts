@@ -54,6 +54,19 @@ class BinarySearchTree{
                   return node;
             }
       }
+      levelOrder():void{
+            if(!this.root)return;
+            const queue:TreeNode[] = [this.root]
+            while(queue.length > 0){
+                  const currentNode  = queue.shift();
+                  if(currentNode){
+                        console.log(currentNode.value);
+                        if(currentNode.left!==null)queue.push(currentNode.left);
+                        if(currentNode.right!==null)queue.push(currentNode.right);
+                  }
+            }
+      }
+      //complexity of DFS and BFS ,time complexity is O(n),because each node is visited only once.
       inOrder():void{
             if(!this.root)return;
             this.inOrderTraversal(this.root)
@@ -137,4 +150,5 @@ class BinarySearchTree{
 const bst = new BinarySearchTree()
 bst.insert(10);bst.insert(15);bst.insert(5);bst.insert(3);bst.insert(6);
 // bst.inOrder();
-bst.preOrder()
+// bst.preOrder()
+bst.levelOrder()
